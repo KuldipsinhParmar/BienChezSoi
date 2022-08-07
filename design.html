@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      /* Create two equal columns that floats next to each other */
+
+      .column1 {
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        float: left;
+        width: 30%;
+        padding-top: 35px;
+        margin: auto;
+        height: 100px; /* Should be removed. Only for demonstration */
+        background-color: #006782;
+        text-align: center;
+      }
+      .column2 {
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        padding-top: 35px;
+        float: left;
+        background-color: #ffffff;
+        width: 70%;
+        padding: 10px;
+        height: 100px; /* Should be removed. Only for demonstration */
+      }
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      .row {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      }
+      .step {
+        position: absolute;
+        margin-top: -15px;
+        margin-left: -15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <img src="Group-5.png" class="step" />
+      <div class="column1">
+        <img src="Vector-2.png" />
+      </div>
+      <div class="column2">
+        <p style="line-height: 30px">
+          Appel initial pour voir avec vous l'offre qui vous correspond
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

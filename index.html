@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      /* Create two equal columns that floats next to each other */
+      .column {
+        float: left;
+        width: 50%;
+      }
+
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      .column1 {
+        width: 45%;
+        float: left;
+      }
+
+      .column2 {
+        width: 45%;
+        float: left;
+      }
+      .column3 {
+        width: 10%;
+        float: left;
+        height: 100px; /* Should be removed. Only for demonstration */
+      }
+      .column4 {
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        float: left;
+        width: 20%;
+        padding-top: 35px;
+        margin: auto;
+        height: 100px; /* Should be removed. Only for demonstration */
+        background-color: #006782;
+        text-align: center;
+      }
+      .column5 {
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        padding-top: 35px;
+        float: left;
+        background-color: #ffffff;
+        width: 80%;
+        padding: 10px;
+        height: 100px; /* Should be removed. Only for demonstration */
+      }
+      .row-border {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+      }
+      .step {
+        position: absolute;
+        margin-top: -15px;
+        margin-left: -15px;
+      }
+      .sec-arrow {
+        position: absolute;
+        margin-left: 40%;
+        height: 175px;
+      }
+      .four-arrow {
+        position: absolute;
+        padding-top: 70px;
+        padding-left: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row" style="padding: 25px">
+      <div class="column1">
+        <div class="row row-border">
+          <img src="Group-5.png" class="step" />
+          <div class="column4">
+            <img src="Vector-2.png" height="36px" width="36px" />
+          </div>
+          <div class="column5">
+            <p style="line-height: 30px; padding-left: 25px; margin-top: 10px">
+              Appel initial pour voir avec vous l'offre qui vous correspond
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="column3">
+        <img src="Vector-9.png" style="margin-top: 30px" width="100%" />
+      </div>
+      <div class="column2">
+        <img src="Vector-10.png" style="margin-top: 30px" class="sec-arrow" />
+        <div class="row row-border">
+          <img src="Group-6.png" class="step" />
+          <div class="column4">
+            <img src="Vector-3.png" height="40px" width="32px" />
+          </div>
+          <div class="column5">
+            <p style="line-height: 30px; padding-left: 25px; margin-top: 20px">
+              Évaluation gratuite à domicile
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row" style="padding: 25px">
+      <div class="column1">
+        <img src="Vector-12.png" style="margin-top: 30px" class="four-arrow" />
+        <div class="row row-border">
+          <img src="Group-8.png" class="step" />
+          <div class="column4">
+            <img src="Vector-4.png" height="28px" width="40px" />
+          </div>
+          <div class="column5">
+            <p style="line-height: 30px; padding-left: 25px; margin-top: 20px">
+              Préparation du jumelage idéal
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="column3">
+        <img src="Vector-11.png" style="margin-top: 30px" width="100%" />
+      </div>
+      <div class="column2">
+        <div class="row row-border">
+          <img src="Group-7.png" class="step" />
+          <div class="column4">
+            <img src="Vector.png" height="40px" width="36px" />
+          </div>
+          <div class="column5">
+            <p style="line-height: 30px; padding-left: 25px; margin-top: 10px">
+              Développement d'un plan de soutien individuel
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="row"
+      style="padding-left: 25px; padding-right: 25px; padding-top: 50px"
+    >
+      <div style="width: 27%; height: 100px; float: left"></div>
+      <div class="column1">
+        <div class="row row-border">
+          <img src="Group-9.png" class="step" />
+          <div class="column4">
+            <img src="Vector-5.png" height="40px" width="40px" />
+          </div>
+          <div class="column5">
+            <p style="line-height: 30px; padding-left: 25px; margin-top: 20px">
+              Début des prestations
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
